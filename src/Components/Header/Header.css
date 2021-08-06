@@ -1,0 +1,58 @@
+.header-block {
+    background-image: url('../../public/images/image-header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / -1;
+    grid-row: 1;
+
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 100px repeat(5, 1fr);
+}
+
+.header-block h1 {
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+.logo {
+    font-family: 'Barlow', serif;
+    color: white;
+    font-weight: bolder;
+    letter-spacing: -0.1rem;
+    font-size: 2rem;
+}
+
+.nav-link {
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#contact-btn.nav-link {
+    font-family: 'Fraunces', serif;
+    color: black;
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid white ;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+#contact-btn.nav-link:hover {
+    color: white;
+    background-color: transparent;
+}
